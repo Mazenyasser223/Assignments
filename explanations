@@ -1,0 +1,12 @@
+At first, I extracted the csv file adult. Data from the zip file using zipfile module,
+then I read the data using pd.read_csv.
+
+The data didn’t have columns names, so I added it manually.
+
+I Preprocess the dataset by handling missing values, duplicates encoding categorical variables, and splitting it into features (X) and the target variable (y).
+
+I Trained a Naive Bayes classifier on the training data, and calculate the accuracy of the model, Then I predict the first 10 instances in the test data.
+
+I #Computed the confusion matrix using sklearn library, then calculated the sensitivity and specificity.
+
+I used the predict_proba() method available in scikit-learn's Naive Bayes classifiers. This method calculates the posterior probability of each class (in this case, making over 50K or not) for each sample in the test dataset, Then I Extract the posterior probability for the positive class (making over 50K) and calculate it for the first 10 instances.
